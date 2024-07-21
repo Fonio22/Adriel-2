@@ -217,5 +217,7 @@ def crear_app():
 
 app = crear_app()
 
+server = app.server  # Exponiendo el servidor Flask subyacente
+
 if __name__ == "__main__":
     app.run_server(debug=False)
